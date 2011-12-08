@@ -1,9 +1,21 @@
    This module is available for you to manage and maintain your real life.
 * tenure
+Enough is good.
 * diet
+Semi-vegetarian
+** breakfast
+** lunch
+** dinner
 * travel
 * apparel
 * housing
-* aromr
-
+* fitness
+* armor
+** Mi-one
+** Y460
+*** Ubuntu 11.10
+**** Gnome 3
+**** Emacs 23
+**** Vim
+**** Chrome
 
