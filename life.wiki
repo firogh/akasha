@@ -38,10 +38,26 @@
 
 * akasha
 This project is personal management utilise tool set for every body to control their life.
-** lifestyle.wiki
-   lifestyle is 
+** firo.wiki
+Who am I? I am who?
+What I will become? I will become what?
+firo.wiki is an integration and reflection of life.wiki and live.wiki;
+firo.wiki has the new features as it is.
+
+*** firo
+さかた ぎんとき 银魂:无论发生什么都要乐观生活.
+クロロ ルシルフル: 一对二，果然有点吃力
+Robert Love:Google
+Tintin
+
+  
+
+
+***   Share life with others
+***   Thanks for the Memories
+*** 我想我可以忍住悲伤，假装生命里没有你！
 ** life.wiki
-   This module is willing to draw a blue print on you life.
+   This module is willing to draw a blueprint on you life.
    It contains:
 *** The sail of time.
     This is mainly to keep track of you life-orbits.
@@ -49,7 +65,6 @@ This project is personal management utilise tool set for every body to control t
     For example,I have a dream ,akasha as it.
 ** live.wiki
    This module is available for you to manage and maintain your real life.
-
 *** tenure
 *** diet
 *** travel
