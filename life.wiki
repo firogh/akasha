@@ -31,38 +31,17 @@
      11-30:I am very sad that I lost Wang xingsi(Cynthia).
            Tow and half years contract with phone mail. It's all my fault.
      12-04:Come back to Dlnu. Finally, I get Mi phone.
-     12-06:I know that person Yue yun jiu.
-     
+     12-06:I know that person Yue yun jiu.     
 **   12
-     
-
 * akasha
-This project is personal management utilise tool set for every body to control their life.
-** firo.wiki
-Who am I? I am who?
-What I will become? I will become what?
-firo.wiki is an integration and reflection of life.wiki and live.wiki;
-firo.wiki has the new features as it is.
-
-*** firo
-さかた ぎんとき 银魂:无论发生什么都要乐观生活.
-クロロ ルシルフル: 一对二，果然有点吃力
-Robert Love:Google
-Tintin
-
-  
-
-
-***   Share life with others
-***   Thanks for the Memories
-*** 我想我可以忍住悲伤，假装生命里没有你！
+This project is personal management utilise set for every body to control their life, share their life.
 ** life.wiki
-   This module is willing to draw a blueprint on you life.
+   This module is willing to draw a blueprint on you spirt life.
    It contains:
 *** The sail of time.
     This is mainly to keep track of you life-orbits.
 *** And your dream 
-    For example,I have a dream ,akasha as it.
+    For example,I have a dream ,akasha as it is.
 ** live.wiki
    This module is available for you to manage and maintain your real life.
 *** tenure
@@ -80,3 +59,17 @@ Tintin
         Emacs 23
 
         
+        
+** firo.wiki
+Who am I? I am who?
+What I will become? I will become what?
+firo.wiki is an integration and reflection of life.wiki and live.wiki;
+firo.wiki has the new features as it is.
+*** firo
+ 1. さかた ぎんとき 银魂:无论发生什么都要乐观生活.
+ 2. クロロ ルシルフル: 一对二，果然有点吃力
+ 3. Robert Love:Google
+ 4. Tintin
+***   Share life with others
+***   Thanks for the Memories
+***   我想我可以忍住悲伤，假装生命里没有你！
