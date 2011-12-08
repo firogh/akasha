@@ -1,1 +1,4 @@
-Provide mechanism,not plicy.
+
+Provide mechanism,not policy.
+Don't reinvte the wheel.
+Find the trends of techniques(kvm).
