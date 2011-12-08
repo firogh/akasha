@@ -1,3 +1,9 @@
-
+   This module is available for you to manage and maintain your real life.
+* tenure
+* diet
+* travel
+* apparel
+* housing
+* aromr
 
 

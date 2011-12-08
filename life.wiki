@@ -1,4 +1,5 @@
 * The sail of time (岁月的帆)
+    This is mainly to keep track of you life-orbits.
 **   89
   9-13:born in Hei Longjiang province in China.
 **   90
@@ -37,19 +38,8 @@
 This project is personal management utilise set for every body to control their life, share their life.
 ** life.wiki
    This module is willing to draw a blueprint on you spirt life.
-   It contains:
-*** The sail of time.
-    This is mainly to keep track of you life-orbits.
-*** And your dream 
-    For example,I have a dream ,akasha as it is.
 ** live.wiki
    This module is available for you to manage and maintain your real life.
-*** tenure
-*** diet
-*** travel
-*** apparel
-*** housing
-*** aromr
 ** firo.wiki
    In this part ,you will touch a people who you want to become,
    in the furture.
