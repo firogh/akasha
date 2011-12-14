@@ -8,8 +8,10 @@ Semi-vegetarian
 ** dinner
 * travel
 * apparel
+  Aloof Jeans
 * housing
 * fitness
+** jogging
 * armor
 ** Mi-one
 ** Y460
@@ -18,4 +20,3 @@ Semi-vegetarian
 **** Emacs 23
 **** Vim
 **** Chrome
-

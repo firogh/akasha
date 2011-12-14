@@ -1,16 +1,36 @@
-** firo.wiki
-Who am I? I am who?
-What I will become? I will become what?
 firo.wiki is an integration and reflection of life.wiki and live.wiki;
 firo.wiki has the new features as it is.
-*** firo
+In this world ,who are you? Find your role in this times.
+* クロロ ルシルフル: 一对二，果然有点吃力
  * さかた ぎんとき 银时 : 喂,无论发生什么都要乐观生活.
  * 西索 ヒソカ 
- * クロロ ルシルフル: 一对二，果然有点吃力
  * Robert Love:Google
  * Tintin
+ * Lyubishchev 
+ * firo
  * 
+* Paradigm
+** The art of life simplicity.
+** 快速迭代，越变越美
 
-***   Share life with others
-***   Thanks for the Memories
-***   我想我可以忍住悲伤，假装生命里没有你！
+
+* Philosopher
+
+* Programmer
+** DS
+** AL
+** Kernel & kvm
+** Github
+** etc
+
+* Extraordinary  Physical
+
+* Psychologist
+
+* Mathematician
+
+* Musician
+
+* Adventurer
+
+* Historian
