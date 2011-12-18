@@ -1,3 +1,11 @@
+|12-18 |1-1|1-8|
+* Short-term planning
+** TODO Travel,then,which place you want to go.
+** TODO LKD(one-week:1-25)
+** TODO First patch on kernel (50 days:2-10)
+* Long-term habit
+** TODO dress style
+** TODO DS,AL,CS
 * Usual day-to-day
 ** 6:30
    getup
@@ -15,11 +23,11 @@
 ** 11:00
    fall asleep
    
-
-* quota
+* Quota
 | kernel     | all the main mechnisims;partly src | 3 |
 | kvm        | src and mechisims                  | 3 |
 | algorithms |                                    | 1 |
 | mathmatics |                                    | 1 |
 | lkml       |                                    | 1 |
+|            |                                    |   |
 
