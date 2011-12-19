@@ -1,0 +1,219 @@
+127.0.0.1	localhost
+127.0.1.1	snow
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+#91.198.174.234 upload.wikimedia.org
+#208.80.152.211 upload.wikimedia.org
+#91.198.174.3 upload.wikimedia.org
+
+#74.125.127.113 groups.google.com
+#74.125.127.101 groups.google.com
+
+
+216.34.181.45 slashdot.org
+208.80.152.200 donate.wikimedia.org 
+207.97.227.243 github.com
+208.43.192.33	wikispaces.com
+75.126.104.177	wikispaces.com
+#87.253.128.182 	lkml.org
+
+203.208.46.148    encrypted.google.com
+203.208.46.148    encrypted-tbn0.google.com
+203.208.46.148    encrypted-tbn1.google.com
+203.208.46.148    encrypted-tbn2.google.com
+203.208.46.148    encrypted-tbn3.google.com
+203.208.46.148    encrypted-tbn4.google.com
+203.208.46.148    encrypted-tbn5.google.com
+203.208.46.148    encrypted-tbn6.google.com
+203.208.46.148    encrypted-tbn7.google.com
+203.208.46.148    encrypted-tbn8.google.com
+203.208.46.148    encrypted-tbn9.google.com
+203.208.46.148    encrypted.google.com.hk
+
+209.85.153.100 encrypted.google.com
+
+
+##Chrome 网上应用店
+
+203.208.46.145 chrome.google.com
+
+203.208.46.145 clients0.google.com                                ##------------------##
+
+203.208.46.145 clients1.google.com                                ##可能和搜索建议有关##
+
+203.208.46.145 clients2.google.com                                ##可能和搜索建议有关##
+
+203.208.46.145 clients3.google.com                                ##可能和搜索建议有关##
+
+203.208.46.145 clients4.google.com                                ##------------------##
+
+
+
+203.208.46.145 www.googleusercontent.com                          ##-----------------------------##
+
+203.208.46.145 lh0.googleusercontent.com                          ##网页上的图片*好多服务都要用到##
+
+203.208.46.145 lh1.googleusercontent.com                          ##网页上的图片*好多服务都要用到##
+
+203.208.46.145 lh2.googleusercontent.com                          ##网页上的图片*好多服务都要用到##
+
+203.208.46.145 lh3.googleusercontent.com                          ##网页上的图片*好多服务都要用到##
+
+203.208.46.145 lh4.googleusercontent.com                          ##网页上的图片*好多服务都要用到##
+
+203.208.46.145 lh5.googleusercontent.com                          ##网页上的图片*好多服务都要用到##
+
+203.208.46.145 lh6.googleusercontent.com                          ##-----------------------------##
+
+203.208.46.145 clients1.googleusercontent.com                     
+
+203.208.46.145 clients2.googleusercontent.com
+
+203.208.46.145 browsersync.google.com                             ##看域名可能是同步
+
+
+
+##网页快照
+
+203.208.46.145 webcache.googleusercontent.com
+
+
+
+##Google SSL
+
+203.208.46.145 encrypted.google.com
+
+203.208.46.145 encrypted.google.com.hk 
+
+
+
+##Google Docs
+
+203.208.46.145 docs.google.com
+
+203.208.46.145 docs0.google.com
+
+203.208.46.145 docs1.google.com
+
+203.208.46.145 docs2.google.com
+
+203.208.46.145 docs3.google.com
+
+203.208.46.145 spreadsheets.google.com
+
+203.208.46.145 spreadsheets0.google.com
+
+203.208.46.145 spreadsheets1.google.com
+
+203.208.46.145 spreadsheets2.google.com
+
+203.208.46.145 spreadsheets3.google.com
+
+
+
+#Gmail 
+
+203.208.46.145 mail.google.com 
+
+203.208.46.145 chatenabled.mail.google.com        #Gmail中Gtalk聊天服务
+
+
+
+##Google 搜索
+
+#203.208.46.145 www.google.com
+74.125.71.147 www.google.com
+
+##Google reader
+74.125.31.106 reader.google.com
+
+
+
+##Google preview
+
+203.208.46.145 www.googlepreview.com
+
+
+
+##Google 翻译
+203.208.46.145 translate.google.com
+203.208.46.145 translate.googleapis.com
+
+
+
+##Google 搜索建议（IE9）
+203.208.46.145 clients5.google.com
+
+
+
+##Google code
+203.208.46.145 code.google.com
+
+
+
+##Picasa 网络相册
+203.208.46.145 picasaweb.google.com
+203.208.46.145 lh0.ggpht.com 
+203.208.46.145 lh1.ggpht.com 
+203.208.46.145 lh2.ggpht.com 
+203.208.46.145 lh3.ggpht.com 
+203.208.46.145 lh4.ggpht.com 
+203.208.46.145 lh5.ggpht.com 
+203.208.46.145 lh6.ggpht.com 
+203.208.46.145 lh7.ggpht.com 
+203.208.46.145 lh8.ggpht.com 
+203.208.46.145 lh8.ggpht.com 
+203.208.46.145 lh9.ggpht.com
+203.208.46.145 lh6.google.com
+
+
+
+##Google 个人资料
+203.208.46.145 profiles.google.com
+
+216.34.181.60 sourceforge.net
+
+##Google+
+203.208.46.145 talkgadget.google.com                                     ##Google+中的聊天服务
+203.208.46.145 ssl.gstatic.com                                           ##Google+中的聊天服务
+203.208.46.145 images-pos-opensocial.googleusercontent.com               ##缩略图
+203.208.46.145 images1-focus-opensocial.googleusercontent.com
+203.208.46.145 images2-focus-opensocial.googleusercontent.com
+203.208.46.145 images3-focus-opensocial.googleusercontent.com
+203.208.46.145 images4-focus-opensocial.googleusercontent.com            ##不知道有没有这几条
+203.208.46.145 images5-focus-opensocial.googleusercontent.com            #-_-*
+203.208.46.145 images6-focus-opensocial.googleusercontent.com            #-_-*
+203.208.46.145 plus.google.com
+
+
+
+##Download 下载
+203.208.46.145 dl.google.com
+203.208.46.145 dl-ssl.google.com
+
+
+
+##Groups
+203.208.46.145 groups.google.com
+
+
+
+##Google 博物馆
+203.208.46.145 www.googleartproject.com
+
+
+
+##Google URL Shortener
+203.208.46.145 goo.gl
+
+
+
+##Google app engine
+203.208.46.145 appengine.google.com
