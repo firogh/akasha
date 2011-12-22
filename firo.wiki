@@ -18,8 +18,9 @@ In this world ,who are you? Find your role in this times.
 ** Learning is a process of initiative exploration,not passive receive.
    能否成为“高手”的决定性因素取决于你的学习方法和学习态度，而好的“秘籍”仅仅只是催化剂
 ** Simply behind complex.
+** Improve a little everyday.
 ** Learning ability
-   1.Problem-based
+   1.Problem-based ,request-based.
    1.1.First, decribe you question.
    1.2.Then,find the answers.
    2.Keep curious,Develop the habit of thinking,
@@ -46,8 +47,8 @@ In this world ,who are you? Find your role in this times.
     这取决于他们的态度和学习方法。笔者建议，在读书的时候，
     一定要以自己心中的疑问作为主线，而不要没有任何疑问就死记书本上的知识。    
 *** How to read book
-   * Refine important concepts.
-   * Trace the execution flow.
+   * Extract and refine important concepts.
+   * Trace the execution flow,draw a knowledge network in my head.
 * Philosopher
 
 * Programmer
