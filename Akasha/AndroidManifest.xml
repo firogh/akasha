@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firo.akasha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- android:theme="@android:style/Theme.NoTitleBar" -->
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".AkashaActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CurrentAddDialogActivity"
+            android:label="add task sort by time"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".PastActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CurrentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FutureActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
