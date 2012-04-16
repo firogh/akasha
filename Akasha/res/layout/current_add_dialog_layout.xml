@@ -24,12 +24,11 @@
                 <TimePicker
                     android:id="@+id/add_timePicker"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
                 <requestFocus />
             </LinearLayout>
 
-           
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,9 +38,8 @@
                     android:id="@+id/action_edittext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10" >
-
-
+                    android:ems="10"
+                    android:hint="action" >
                 </EditText>
             </LinearLayout>
 
@@ -55,7 +53,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine" 
+                     android:hint="description"/>
             </LinearLayout>
 
             <RelativeLayout
@@ -75,9 +74,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:text="OK" />
-
             </RelativeLayout>
-
         </LinearLayout>
     </HorizontalScrollView>
 

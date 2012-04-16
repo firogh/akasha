@@ -28,7 +28,7 @@ public class CurrentActivity extends Activity {
 				Intent intent;
 				intent = new Intent().setClass(CurrentActivity.this,CurrentAddDialogActivity.class);
 				startActivity(intent);
-
+				System.out.println("Just for you~~");
 				// Dialog dialog = new Dialog(CurrentActivity.this);
 				// dialog.setContentView(R.layout.current_add_dialog_layout);
 				// dialog.setTitle("akasha add Dialog");

@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, AkashaActivity!</string>
     <string name="app_name">Akasha</string>
+    <string name="ADD">新增add</string>
+    <string name="EDIT">修改modify</string>
+    <string name="DELETE">删除delete</string>
 
 </resources>

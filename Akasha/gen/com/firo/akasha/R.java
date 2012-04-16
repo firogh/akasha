@@ -14,10 +14,13 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int Button01=0x7f05000b;
-        public static final int Button02=0x7f05000c;
-        public static final int Button03=0x7f05000d;
-        public static final int TextView01=0x7f05000a;
+        public static final int Button01=0x7f050012;
+        public static final int Button02=0x7f050013;
+        public static final int Button03=0x7f050014;
+        public static final int EditText1=0x7f05000d;
+        public static final int LinearLayout0=0x7f050009;
+        public static final int ListView1=0x7f05000f;
+        public static final int TextView01=0x7f050011;
         public static final int action_edittext=0x7f050003;
         public static final int add_button=0x7f050007;
         public static final int add_no_button=0x7f050005;
@@ -26,18 +29,26 @@ public final class R {
         public static final int description_edittext=0x7f050004;
         public static final int horizontalScrollView1=0x7f050000;
         public static final int layout_root=0x7f050001;
-        public static final int text2=0x7f050009;
-        public static final int timePicker1=0x7f050008;
+        public static final int linearLayout1=0x7f05000a;
+        public static final int linearLayout2=0x7f05000c;
+        public static final int linearLayout3=0x7f05000e;
+        public static final int text2=0x7f050010;
+        public static final int timePicker1=0x7f05000b;
+        public static final int topTextView=0x7f050008;
     }
     public static final class layout {
         public static final int current_add_dialog_layout=0x7f030000;
         public static final int current_layout=0x7f030001;
-        public static final int future_layout=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int past_layout=0x7f030004;
-        public static final int resource=0x7f030005;
+        public static final int dumb=0x7f030002;
+        public static final int future_layout=0x7f030003;
+        public static final int main=0x7f030004;
+        public static final int past_layout=0x7f030005;
+        public static final int resource=0x7f030006;
     }
     public static final class string {
+        public static final int ADD=0x7f040002;
+        public static final int DELETE=0x7f040004;
+        public static final int EDIT=0x7f040003;
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
     }
