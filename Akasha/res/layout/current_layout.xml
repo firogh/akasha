@@ -3,17 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none|vertical" >
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView1"
+        <ListView
+            android:id="@+id/current_listview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-        </HorizontalScrollView>
-    </ScrollView>
+        </ListView>
+    </LinearLayout>
 
     <Button
         android:id="@+id/add_button"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.firo.akasha"
+    package="org.firo.akasha"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -24,6 +24,11 @@
         <activity
             android:name=".CurrentAddDialogActivity"
             android:label="add task sort by time"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".CurrentModifyDialogActivity"
+            android:label="modify task sort by time"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
         <activity
