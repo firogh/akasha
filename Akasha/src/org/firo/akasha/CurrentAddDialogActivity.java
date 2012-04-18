@@ -27,6 +27,7 @@ public class CurrentAddDialogActivity extends Activity {
 	public Button DialogOkButton;
 	public Button DialogNoButton;
 	private Toast toast;
+	private String showString;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -50,12 +51,17 @@ public class CurrentAddDialogActivity extends Activity {
 
 				actionString = actionEditText.getText().toString();
 				descriptionString = descriptionEditText.getText().toString();
+				showString = String.valueOf(addHour)+":"+String.valueOf(addMinute);
+				if(!actionString.isEmpty())
+					showString += "   "+actionString;
+				if(!descriptionString.isEmpty())
+					showString += "\n"+descriptionString;
 				if (actionString.isEmpty() && descriptionString.isEmpty()) {
 					toast = Toast.makeText(getApplicationContext(),
 							"please insert anything", Toast.LENGTH_LONG);
 					toast.show();
 				} else {
-					db.insert(_id, actionString, descriptionString);
+					db.insert(_id, actionString, descriptionString, showString);
 
 					System.out.println("\nID:" + _id + "\ndescription string:"
 							+ descriptionString + "\n" + "action string:"

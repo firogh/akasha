@@ -24,6 +24,7 @@ public class CurrentModifyDialogActivity extends Activity {
 	public int modifyMinute;
 	String actionString;
 	String descriptionString;
+	String showString;
 	int numColumn;
 	int totalTime;
 	public Button currentDialogOkButton;
@@ -78,15 +79,20 @@ public class CurrentModifyDialogActivity extends Activity {
 
 				actionString = actionEditText.getText().toString();
 				descriptionString = descriptionEditText.getText().toString();
-
+				showString = String.valueOf(modifyHour)+":"+String.valueOf(modifyMinute);
+				if(!actionString.isEmpty())
+					showString += "   "+actionString;
+				if(!descriptionString.isEmpty())
+					showString += "\n"+descriptionString;
+				
 				System.out.println("\nID:" + _id + "before \n");
 				if (temp_id != _id) {
 					db.delete(_id);
 					_id = temp_id;
-					db.insert(_id, actionString, descriptionString);
+					db.insert(_id, actionString, descriptionString,showString);
 					System.out.println("\n 1 insert\n");
 				} else {
-					db.update(_id, actionString, descriptionString);
+					db.update(_id, actionString, descriptionString,showString);
 					System.out.println("\n 2 update\n");
 				}
 				System.out.println("\nID:" + _id + "\n description string"

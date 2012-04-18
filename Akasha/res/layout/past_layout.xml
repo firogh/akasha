@@ -12,7 +12,7 @@
         android:orientation="vertical" >
 
         <TimePicker
-            android:id="@+id/timePicker1"
+            android:id="@+id/pastTimePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

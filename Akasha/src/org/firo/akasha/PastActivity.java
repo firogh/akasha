@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.TimePicker;
@@ -22,9 +23,15 @@ public class PastActivity extends Activity {
 	private ListView pastListView;
 	private EditText pastEditText;
 	private int _id;
+	private TimePicker pastTimePicker;
+	private int pastHour;
+	private int pastMinute;
+	private String oneTimeTaskString;
+	private String oneTaskString;
 	protected final static int MENU_ADD = Menu.FIRST;
 	protected final static int MENU_EDIT = Menu.FIRST + 1;
 	protected final static int MENU_DELETE = Menu.FIRST + 2;
+	private Toast toast;
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -65,12 +72,14 @@ public class PastActivity extends Activity {
 
 		pastEditText = (EditText) findViewById(R.id.EditText1);
 		pastListView = (ListView) findViewById(R.id.ListView1);
+		pastTimePicker = (TimePicker) findViewById(R.id.pastTimePicker);
+
 		pastDb = new PastDbHelper(PastActivity.this);
 		pastDbCursor = pastDb.select();
 		@SuppressWarnings("deprecation")
 		SimpleCursorAdapter pastAdpater = new SimpleCursorAdapter(this,
 				R.layout.dumb, pastDbCursor,
-				new String[] { PastDbHelper.FIELD_TITLE },
+				new String[] { PastDbHelper.FIELD_SHOW },
 				new int[] { R.id.topTextView });
 		pastListView.setAdapter(pastAdpater);
 		pastListView.setOnItemClickListener(new OnItemClickListener() {
@@ -83,7 +92,7 @@ public class PastActivity extends Activity {
 				pastEditText.setText(pastDbCursor.getString(1));
 				if (((ListView) parent).getTag() != null) {
 					((View) ((ListView) parent).getTag())
-							.setBackgroundDrawable(null);
+							.setBackgroundColor(Color.BLACK);
 				}
 				((ListView) parent).setTag(view);
 
@@ -113,18 +122,49 @@ public class PastActivity extends Activity {
 		if (pastEditText.getText().toString().equals(""))
 			return;
 		if (cmd == "add") {
-			TimePicker addTimePicker = (TimePicker) findViewById(R.id.timePicker1);
-			int addHour = addTimePicker.getCurrentHour();
-			int addMinute = addTimePicker.getCurrentMinute();
-			String oneTimeTaskString = String.valueOf(addHour) + ":"
-					+ String.valueOf(addMinute) + "\n"
-					+ pastEditText.getText().toString();
-			pastDb.insert(addHour * 60 + addMinute, oneTimeTaskString);
+			pastHour = pastTimePicker.getCurrentHour();
+			pastMinute = pastTimePicker.getCurrentMinute();
+
+			oneTaskString = pastEditText.getText().toString();
+			oneTimeTaskString = String.valueOf(pastHour) + ":"
+					+ String.valueOf(pastMinute) + "\n" + oneTaskString;
+			pastDb.insert(pastHour * 60 + pastMinute, oneTaskString,
+					oneTimeTaskString);
 		}
-		if (cmd == "edit")
-			pastDb.update(_id, pastEditText.getText().toString());
+		if (cmd == "edit") {
+			if (pastListView.getTag() == null) {
+				toast = Toast.makeText(getApplicationContext(),
+						"Save? please select any modified one~~",
+						Toast.LENGTH_LONG);
+				toast.show();
+			} else {
+				int tempHour = _id / 60;
+				int tempMinute = _id % 60;
+				((View)pastListView.getTag()).setBackgroundColor(Color.BLACK);
+				pastDb.update(
+						_id,
+						pastEditText.getText().toString(),
+						String.valueOf(tempHour) + ":"
+								+ String.valueOf(tempMinute) + "\n"
+								+ pastEditText.getText().toString());
+				pastListView.setTag(null);
+			}
+		}
+
 		if (cmd == "delete")
-			pastDb.delete(_id);
+		{
+			if (pastListView.getTag() == null) {
+				toast = Toast.makeText(getApplicationContext(),
+						"Delete? please select any modified one~~",
+						Toast.LENGTH_LONG);
+				toast.show();
+			} else {
+				((View)pastListView.getTag()).setBackgroundColor(Color.BLACK);
+				pastDb.delete(_id);
+				pastListView.setTag(null);
+			}
+		}
+
 		pastDbCursor.requery();
 		pastListView.invalidateViews();
 		pastEditText.setText("");

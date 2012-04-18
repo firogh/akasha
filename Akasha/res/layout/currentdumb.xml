@@ -12,12 +12,4 @@
         android:textSize="20dip" >
     </TextView>
 
-    <TextView
-        android:id="@+id/topTextView2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="This is just a deaf-mute2!"
-        android:textSize="20dip" >
-    </TextView>
-
 </LinearLayout>

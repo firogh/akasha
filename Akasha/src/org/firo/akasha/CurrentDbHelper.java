@@ -14,6 +14,7 @@ public class CurrentDbHelper extends SQLiteOpenHelper {
 	public final static String FIELD_ID = "_id";
 	public final static String FIELD_ACTION = "current_db_action";
 	public final static String FIELD_DESCRIPTION = "current_db_description";
+	public final static String FIELD_SHOW = "current_db_show";
 
 	public CurrentDbHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -24,7 +25,7 @@ public class CurrentDbHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 		String sql = "Create table " + TABLE_NAME + "(" + FIELD_ID
 				+ " integer primary key ," + FIELD_ACTION
-				+ " text , " + FIELD_DESCRIPTION + " text );";//
+				+ " text , " + FIELD_DESCRIPTION + " text , "+FIELD_SHOW+" text );";//
 		db.execSQL(sql);
 	}
 
@@ -71,12 +72,13 @@ public class CurrentDbHelper extends SQLiteOpenHelper {
 		return cursor;
 	}
 
-	public long insert(Integer id, String action, String description) {
+	public long insert(Integer id, String action, String description, String show) {
 		SQLiteDatabase db = this.getWritableDatabase();
 		ContentValues cv = new ContentValues();
 		cv.put(FIELD_ID, id);
 		cv.put(FIELD_ACTION, action);
 		cv.put(FIELD_DESCRIPTION, description);
+		cv.put(FIELD_SHOW, show);
 		long row = db.insert(TABLE_NAME, null, cv);
 		return row;
 	}
@@ -88,13 +90,14 @@ public class CurrentDbHelper extends SQLiteOpenHelper {
 		db.delete(TABLE_NAME, where, whereValue);
 	}
 
-	public void update(int id, String action, String description) {
+	public void update(int id, String action, String description, String show) {
 		SQLiteDatabase db = this.getWritableDatabase();
 		String where = FIELD_ID + "=?";
 		String[] whereValue = { Integer.toString(id) };
 		ContentValues cv = new ContentValues();
 		cv.put(FIELD_ACTION, action);
 		cv.put(FIELD_DESCRIPTION, description);
+		cv.put(FIELD_SHOW, show);
 		db.update(TABLE_NAME, cv, where, whereValue);
 	}
 

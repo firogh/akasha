@@ -10,9 +10,10 @@ public class PastDbHelper extends SQLiteOpenHelper {
 
 	private final static String DATABASE_NAME = "past_db";
 	private final static int DATABASE_VERSION = 1;
-	private final static String TABLE_NAME = "sec_pwd";
+	private final static String TABLE_NAME = "past_db_table";
 	public final static String FIELD_ID = "_id";
-	public final static String FIELD_TITLE = "sec_Title";
+	public final static String FIELD_TITLE = "past_db_title";
+	public final static String FIELD_SHOW = "past_db_show";
 
 	public PastDbHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -22,12 +23,9 @@ public class PastDbHelper extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		// TODO Auto-generated method stub
 		String sql = "Create table " + TABLE_NAME + "(" + FIELD_ID
-				+ " integer primary key ," + FIELD_TITLE
-				+ " text );";
-		db.execSQL(sql);// autoincrement  
-		//insert into tablename(field,,) values(i,);
-		// String sqlStr =
-		// "INSERT INTO tablename (f1,f2,f3) values ('"+f1_value+"','"+f2_+"','')";
+				+ " integer primary key ," + FIELD_TITLE + " text , "
+				+ FIELD_SHOW + " text );";
+		db.execSQL(sql);
 	}
 
 	@Override
@@ -56,11 +54,12 @@ public class PastDbHelper extends SQLiteOpenHelper {
 		return cursor;
 	}
 
-	public long insert(Integer i, String Title) {
+	public long insert(Integer id, String title, String show) {
 		SQLiteDatabase db = this.getWritableDatabase();
 		ContentValues cv = new ContentValues();
-		cv.put(FIELD_ID, i);
-		cv.put(FIELD_TITLE, Title);
+		cv.put(FIELD_ID, id);
+		cv.put(FIELD_TITLE, title);
+		cv.put(FIELD_SHOW, show);
 		long row = db.insert(TABLE_NAME, null, cv);
 		return row;
 	}
@@ -72,13 +71,13 @@ public class PastDbHelper extends SQLiteOpenHelper {
 		db.delete(TABLE_NAME, where, whereValue);
 	}
 
-	public void update(int id, String Title) {
+	public void update(int id, String title, String show) {
 		SQLiteDatabase db = this.getWritableDatabase();
 		String where = FIELD_ID + "=?";
 		String[] whereValue = { Integer.toString(id) };
 		ContentValues cv = new ContentValues();
-		cv.put(FIELD_TITLE, Title);
+		cv.put(FIELD_TITLE, title);
+		cv.put(FIELD_SHOW, show);
 		db.update(TABLE_NAME, cv, where, whereValue);
 	}
-
 }
