@@ -1,7 +1,7 @@
 {{ $baseurl := .Site.BaseURL }}
     <div>
         <section id="datecount">
-          <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+          <h4 id="date"> {{ .Date.Format  "Mon Jan 2, 2006" }} </h4>
           <!--<h5 id="wc"> {{ .FuzzyWordCount }} Words </h5>
           <h5 id="readtime"> Read in about {{ .ReadingTime }} Min </h5>-->
         </section>
@@ -11,12 +11,14 @@
             <li><a href="{{ $baseurl }}/topics/{{ . | urlize }}">{{ . }}</a> </li>
           {{ end }}
         </ul>
+	We should got tags here.
       -->
         <ul id="tags">
           {{ range .Params.tags }}
             <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
           {{ end }}
         </ul>
+
     </div>
 <!--
     <div>
