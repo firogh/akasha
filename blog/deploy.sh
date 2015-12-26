@@ -1,12 +1,17 @@
 #!/bin/bash
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
+msg="Update site `date`"
+if [[ "$1" == "-b" ]]
+then
+	cd /home/firo/blog
+	cp -r ./archetypes ./config.toml ./deploy.sh ./layouts ./README.md ./static /home/firo/e/akasha/blog
+	exit
+elif [[ "$#" -ne "0" ]]
+then
+	msg="$@"
+	echo $msg
 fi
-
-
 # Build the project. 
 hugo # if using a theme, replace by `hugo -t <yourtheme>`
 

@@ -3,16 +3,19 @@
 {{ partial "subheader.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 
-<section id="main">
-  <h1 itemprop="name" >{{ .Title }}</h1>
-  {{ partial "meta_aside.html" . }}
+ <link rel="stylesheet" href="highlight.js/src/styles/monokai_sublime.min.css">
+    <script src="highlight.js/src/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	<section id="main">
+	  <h1 itemprop="name" >{{ .Title }}</h1>
+	  {{ partial "meta_aside.html" . }}
 
-  <div>
-        <article itemprop="articleBody" id="content">
-           {{ .Content }}
-        </article>
-  </div>
-</section>
+	  <div>
+		<article itemprop="articleBody" id="content">
+		   {{ .Content }}
+		</article>
+	  </div>
+	</section>
 
 {{ partial "disqus.html" . }}
 {{ partial "footer.html" . }}
