@@ -16,3 +16,6 @@ pygmentsStyle = "monokai"
 
 [blackfriday]
     extensions = ["hardLineBreak"]
+
+[params]
+  themeColor = "theme-base-09"
