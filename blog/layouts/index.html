@@ -8,12 +8,13 @@
     <meta name="google-site-verification" content="BHWZ_E95BFh9L12Z90adRkxTjXIxIGSQG4qiFkcLhUw" />
     <base href="{{ .Site.BaseURL }}">
     <title>{{ .Site.Title }}</title>
+    <!--title>f(x)</title alternate-->
     <link rel="canonical" href="{{ .Permalink }}">
-    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .RSSlink }}" style="color:#B22222" rel="canonical" type="application/rss+xml" title="{{ .Site.Title }}"  />
 
     {{ partial "head_includes.html" . }}
 </head>
-<!--body style="background-color:rgb(235,238,210);" lang="en"-->
+<body style="background-color:#FFFFF0;" lang="en">
 <body lang="en">
 
 {{ partial "subheader.html" . }}
@@ -21,25 +22,15 @@
 <section id="main">
 
   <div>
-<b>My current working, if you are doing the same things, feel free to get touch with me.</b><br>
-Learning theory of computation.<br>
-Trying to prove or get the relationship between TOC and programming abilties.<br>
-Reading SICP.<br>
-Reading The science of programming<br>
-Reading First Draft of a Report on the EDVAC by John von Neumann<br>
-Reading 控制论与科学方法论<br>
-
-<b>My works:</b><br>
-Quantitative Congnition - The Philosophy On Which I Live </br>
-奔腾年代(Chinese version, under construction)<br>
-The Common Cognition Language(under construction)<br>
-The orgnizations of knowledge(under construction)<br>
-      <!-- <h1 id="title">The notes of Firo</h1> 
-    {{ range .Data.Pages }}
-      {{ if .Section}}
+{{ range where .Site.Pages "Source.Path" "home.md" }}
+    {{ .Content }}
+{{ end }}
+   {{ range first 5 .Data.Pages }}
         {{ .Render "summary"}}
-      {{ end }}
-    {{ end }}-->
+    {{ end }}
+
+      <!-- {{ if .Section}} -->
+      <!-- {{ end }}-->
   </div>
 </section>
 

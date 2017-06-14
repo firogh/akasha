@@ -1,13 +1,15 @@
+<a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}} </a><i> {{ .Date.Format "Jan 2, 06" }}</i><br>
+<!-- 
 <article class="post">
-    <header>
-      <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
-      <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} </div>
-    </header>
-	<article itemprop="articleBody" id="content">
-        <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
-		<!-- {{ .Summary }} -->
-	</article>
-    <footer>
-        <!-- <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a> -->
-    </footer>
 </article>
+    <header>
+    </header>
+      <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} </div>
+      <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
+	<article itemprop="articleBody" id="content">
+        <a href='{{ .Permalink }}'>Read more→</a>
+		{{ .Summary }} 
+	</article>-->
+    <!--footer>
+        <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a> 
+    </footer-->

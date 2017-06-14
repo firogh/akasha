@@ -1,19 +1,33 @@
+<body  style="background-color:#FFFFF0;" lang="en">
 {{ partial "header.html" . }}
-<!--body  style="background-color:rgb(235,238,210);" lang="en"-->
-<body lang="en">
+
 {{ partial "subheader.html" . }}
 
 <section id="main">
   <div>
-   <h1 id="title">{{ .Title }}</h1>
-            {{ range .Data.Pages.GroupByDate "2006" }}
+   <h1 id="title" style="color:#B22222;">{{ .Title }}</h1>
+ <!--     <ul id="list">
+            {{ range .Data.Pages.ByDate.Reverse }}
+                {{ .Render "li"}}
+            {{ end }}
+        </ul>-->	
+<ul id="list">
+{{ range .Data.Pages.ByDate.Reverse }}
+<li style="padding:0px;margin:0px;">
+<a href="{{ .Permalink }}" style="font-weight:bold;" >{{ .LinkTitle }}</a>
+<div class="meta" style="background-color:transparent" >{{ .Date.Format "Mon, Jan 2, 2006" }} </div>
+</li>
+{{ end }}
+</ul>
+
+            <!--{{ range .Data.Pages.GroupByDate "2006" }} 
             <h2>{{ .Key }}</h3>
                 <ul id="list">
                     {{ range .Pages }}
                         {{ .Render "li"}}
                     {{ end }}
                 </ul>
-            {{ end }}
+            {{ end }}-->
   </div>
 </section>
 
