@@ -22,7 +22,7 @@
 <section id="main">
 
   <div>
-{{ range where .Site.Pages "Source.Path" "home.md" }}
+{{ range where .Site.Pages "Source.Path" "future.md" }}
     {{ .Content }}
 {{ end }}
    {{ range first 5 .Data.Pages }}
